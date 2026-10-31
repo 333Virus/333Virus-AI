@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRUS AI — Unlimited Vibe Coding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. INTRO ANIMATION -->
+    <div id="intro-screen">
+        <div class="logo">VIRUS_AI.exe</div>
+        <div class="intro-content">
+            <h1 id="type-line1"></h1>
+            <h2 id="type-line2"></h2>
+        </div>
+        <div class="scanlines"></div>
+    </div>
+
+    <!-- 2. MAIN CHAT INTERFACE -->
+    <div id="chat-screen" class="hidden">
+        <header class="top-bar">
+            <div class="header-info">
+                <h1>VIRUS AI</h1>
+                <span class="mode">"UNLIMITED CODING MODE"</span>
+            </div>
+            <div class="header-actions">
+                <div class="status"><span class="dot"></span> SYSTEM ONLINE</div>
+                <button id="new-chat-btn">+ New Chat</button>
+            </div>
+        </header>
+
+        <main id="chat-container">
+            <div id="welcome-message" class="ai-message">
+                <h2>What do you want to build today?</h2>
+                <p>Describe your idea. I'll think through it, write the code, and help you build it.</p>
+            </div>
+            <div id="messages"></div>
+        </main>
+
+        <footer class="input-area">
+            <div class="input-wrapper">
+                <button class="icon-btn" title="Attach File">📎</button>
+                <textarea id="chat-input" placeholder="Ask VIRUS AI to build anything..." rows="1"></textarea>
+                <button id="stop-btn" class="icon-btn hidden" title="Stop Generation">⏹</button>
+                <button id="send-btn" class="icon-btn send" title="Send">▶</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
